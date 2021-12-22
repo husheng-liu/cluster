@@ -1,0 +1,9 @@
+{
+  "token_vocab": "en_bert.txt",
+  "path_raw_file": "data/rcs_en/ss.txt",
+  "path_raw_after_token": "data/rcs_en/ss.txt",
+  "path_w2v": "w2v.vec",
+  "path_vocab": "vocab.bin",
+  "path_models": "models/task1.model",
+  "work_dir": "data/rcs_en/work"
+}

@@ -1,0 +1,50 @@
+{
+  "name": "unsupervised_clustering",
+  "version": "1.0.0",
+  "dependencies": {
+  },
+  "v1": {
+    "path_to_vec": "model/vec_game_filtered.json",
+    "path_to_vec_": "model/ft_300_cn.vec",
+    "num_cls": 2000,
+    "threshold": 0.35,
+    "num": 5,
+    "save_path":"result/cluster_game_review.csv"
+  },
+  "v2": {
+    "path_word_vec":"./fastText-0.9.2/model.vec" ,
+    "path_of_words": "cate_160.txt",
+    "save_rpath_for_cluster": "cluster_v2.txt",
+    "num_cls": 10000,
+    "threshold": 0.40
+  },
+  "train": {
+    "path_to_corpus": "data/all_single_token_stopwords.txt",
+    "train_mode": "skipgram",
+    "dim_vec": 300,
+    "minn": 0,
+    "maxn": 0,
+    "wordNgrams": 5,
+    "ws": 5,
+    "epochs": 100,
+    "lr": 0.5,
+    "minCount": 1,
+    "path_model_to_save":"model/ft_300_cn"
+  },
+  "infer": {
+    "path_model_saved":"vec/en_gamechat_300_with_sub.bin",
+    "num_of_nearest": 20,
+    "num_of_analogies": 10
+  },
+  "infer_": {
+    "path_model_with_subwords": "model/model_300_with_subwords.bin",
+    "path_model_without_subwords": "model/model_300_without_subwords.bin",
+    "path_vec_40m": "vec/model_300_without_subwords.vec",
+    "path_vec_400k": "vec/model_300_raw.vec",
+    "num_of_nearest": 10,
+    "num_of_analogies": 10,
+    "threshold": 0.6,
+    "path_to_save": "result/cluster_by_topics.csv"
+
+  }
+}
